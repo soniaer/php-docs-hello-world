@@ -1,9 +1,9 @@
 <?php
-    $serverName = "dbnewserver.database.windows.net"; // update me
+    $serverName = "dbnewserver.database.windows.net";
     $connectionOptions = array(
-        "Database" => "app_ai", // update me
-        "Uid" => "sqladmin", // update me
-        "PWD" => "adminSql@1234" // update me
+        "Database" => "app_ai",
+        "Uid" => "sqladmin",
+        "PWD" => "adminSql@1234" 
     );
     //Establishes the connection
     $conn = sqlsrv_connect($serverName, $connectionOptions);
