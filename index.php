@@ -33,11 +33,11 @@ $stmt = sqlsrv_query($conn, $tsql);
 if ($stmt === false) {
     die(formatErrors(sqlsrv_errors()));
 }
-?>
+//?>
 
 <h1> Success Results : </h1>
 
-<?php
+//<?php
 while ($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
     echo $row['SQL_VERSION'] . PHP_EOL;
 }
