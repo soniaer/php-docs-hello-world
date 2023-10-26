@@ -17,8 +17,8 @@
     while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) {
      echo ($row['customer_id'] . " " . $row['email'] . PHP_EOL);
     }
-   //$tsgl = " INSERT INTO kareena  
-   //abvVALUES ('54', '5677', 'testw@gmail.com', 'hello', 'hello', '26-10-23');";
-
+    $tmgl = " INSERT INTO kareena  
+   VALUES ('54', '5677', 'testw@gmail.com', 'hello', 'hello', '26-10-23')";
+ $getResult= sqlsrv_query($conn, $tmql);
     sqlsrv_free_stmt($getResults);
 ?>
