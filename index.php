@@ -9,6 +9,7 @@
     $value = $_GET["name"];
     echo "name";
     echo ($value);
+    
 //     $conn = sqlsrv_connect($serverName, $connectionOptions);
 //     $tsql= "SELECT * FROM kareena";
 //     $getResults= sqlsrv_query($conn, $tsql);
