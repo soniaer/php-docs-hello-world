@@ -1,4 +1,3 @@
-
 <?php
 
 $serverName = "dbnewserver.database.windows.net";
@@ -12,7 +11,7 @@ function exception_handler($exception) {
     echo "<h1>Failure</h1>";
     echo "Uncaught exception: " , $exception->getMessage();
     echo "<h1>PHP Info for troubleshooting</h1>";
-     echo phpinfo();
+   // phpinfo();
 }
 
 set_exception_handler('exception_handler');
@@ -33,11 +32,11 @@ $stmt = sqlsrv_query($conn, $tsql);
 if ($stmt === false) {
     die(formatErrors(sqlsrv_errors()));
 }
-
+?>
 
 <h1> Success Results : </h1>
 
-
+<?php
 while ($row = sqlsrv_fetch_array($stmt, SQLSRV_FETCH_ASSOC)) {
     echo $row['SQL_VERSION'] . PHP_EOL;
 }
@@ -57,5 +56,3 @@ function formatErrors($errors)
     }
 }
 ?>
-
-
