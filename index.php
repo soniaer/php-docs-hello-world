@@ -20,5 +20,6 @@ echo ($row['customer_id'] . " " . $row['email'] . " " . $row['incoming_msg'] . "
     $tmgl = "INSERT INTO kareena (customer_id, email, incoming_msg, AI_msg, category, mytimestamp)
    VALUES ('54', 'testw@gmail.com', 'hello', 'hii', 'clinical', '26-10-23')";
  $getResult= sqlsrv_query($conn, $tmql);
+ 
     sqlsrv_free_stmt($getResults);
 ?>
